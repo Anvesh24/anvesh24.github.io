@@ -1,4 +1,5 @@
 #part-two{
+  width: 100vw;
 
 }
 
@@ -91,15 +92,13 @@
 
 
 .works{
-  height: 100vh;
-  width: 100vw;
+  height: 100vh;  
   background-color: white;
   position: relative;
 }
 
 .skills{
-  height: 100vh;
-  width: 100vw;
+  height: 100vh;  
   background-color: white;
   position: relative;
 
@@ -111,10 +110,9 @@
     }
   }
 }
-.side-menu{
+#side-menu{
   background-color: black;
   color: white;
-  position: fixed;
   min-height: 100vh;
 
   ul{
@@ -163,4 +161,5 @@
 
  
 
+ 
  
