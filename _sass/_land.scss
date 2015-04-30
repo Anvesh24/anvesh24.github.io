@@ -1,6 +1,15 @@
-#home{
-  z-index: 10;
+
+
+.side-menu{
+  
+  position: fixed;
 }
+
+#part-two{
+
+}
+
+
 
 .full{
   text-align: center;
@@ -152,7 +161,7 @@
     background-color: black;
     color: white;
     height: 100vh;
-    z-index: 0;
+
     position: fixed;
 
     ul{
