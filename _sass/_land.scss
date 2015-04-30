@@ -1,5 +1,10 @@
+#home{
+  z-index: 10;
+}
+
 .full{
   text-align: center;
+
 
 
 .logo{
@@ -147,6 +152,8 @@
     background-color: black;
     color: white;
     height: 100vh;
+    z-index: 0;
+    position: fixed;
 
     ul{
       margin-top: 50vh;
@@ -193,4 +200,14 @@
 
 .panel .table td{
     vertical-align: middle;
+  }
+
+  .work-menu{
+    height: 100vh;
+    z-index: -10;
+  }
+
+  .skill-menu{
+    height: 100vh;
+    z-index: -10; 
   }
