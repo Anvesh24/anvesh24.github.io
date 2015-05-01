@@ -31,28 +31,15 @@ layout: default
 </section>
 
 <div class="container-fluid">
-  <div class="row" id="part-two">
-    <div class="col-md-3">
-      <div id="sidebar-wrapper">
+  <div class="row" id="parttwo">
+    <div class="col-md-3 container">
+      <div id="side-menu" class="empty">
         <ul>
-            <li ><a href="#">Start Bootstrap</a>
-            </li>
-            <li><a href="#">Dashboard</a>
-            </li>
-            <li><a href="#">Shortcuts</a>
-            </li>
-            <li><a href="#">Overview</a>
-            </li>
-            <li><a href="#">Events</a>
-            </li>
-            <li><a href="#">About</a>
-            </li>
-            <li><a href="#">Services</a>
-            </li>
-            <li><a href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Works</a></li>
+          <li><a href="#skill">Skills</a></li>
+        </ul>        
+      </div>
     </div>
     <div class="col-md-9">
       <section id="work">
@@ -61,8 +48,7 @@ layout: default
           <div class="well well-lg"> 
             <div class="row">
               <div class="col-md-2"> ClassMate Academy </div>
-              <div class="col-md-9"> An online examination portal which dynamically generates chapter wise, subject wise, grand tests for the student. Admin will be able to create new subjects > chapters > topics, to enter the questions to the Question Bank. Admin can also create and schedule the test. </div>
-              <div class="col-md-1"> <a href="https://classmateacademy.herokuapp.com/" target="_blank"> Link </a> </div>
+              <div class="col-md-10"> An online examination portal which dynamically generates chapter wise, subject wise, grand tests for the student. Admin will be able to create new subjects > chapters > topics, to enter the questions to the Question Bank. Admin can also create and schedule a test. </div>              
             </div>
           </div>
 
@@ -189,10 +175,14 @@ layout: default
 </div>
 <script>
   var waypoint = new Waypoint({
-  element: document.getElementById('part-two'),
+  element: document.getElementById('parttwo'),
   handler: function() {
-    notify('Basic waypoint triggered')
-  }
-})
+    if ($('#side-menu').hasClass('fix')) {
+      $('#side-menu').removeClass('fix');
+    }else{
+      $('#side-menu').addClass('fix');
+    };
+    
+    }
+  })
 </script>
-
